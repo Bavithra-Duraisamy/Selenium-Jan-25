@@ -31,8 +31,7 @@ public class CreateAccount {
 			driver.findElement(By.name("officeSiteName")).sendKeys("LeafTaps");
 			driver.findElement(By.className("smallSubmit")).click();
 		}
-		while (driver.findElements(By.className("errorMessageHeader")).size() > 0 
-		         && driver.findElement(By.className("errorMessageHeader")).isDisplayed());
+		while (driver.findElements(By.className("errorMessageHeader")).size() == 0);
 		String pageTitle = driver.getTitle();
 		if(pageTitle.equalsIgnoreCase("Account Details | opentaps CRM")) {
 			System.out.println("The page title has been printed correctly!..");
