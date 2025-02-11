@@ -49,8 +49,6 @@ public class LearnWindowHandles {
 		boolean firstFromElement = driver.findElement(By.xpath("(//table[contains(@class,'row-table')]/tbody/tr/td)[1]")).isDisplayed();
 		if(firstFromElement) {
 			driver.findElement(By.xpath("(//table[contains(@class,'row-table')]/tbody/tr/td)[1]")).click();
-		} else {
-			System.out.println("No rows are displayed!.. Kindly add some leads and try merge again!..");
 		}
 		verifyFocusOnParentWindow();
 		
@@ -62,8 +60,6 @@ public class LearnWindowHandles {
 		boolean secondToElement = driver.findElement(By.xpath("((//table[contains(@class,'row-table')]/tbody)[2])/tr[1]/td[1]")).isDisplayed();
 		if(secondToElement) {
 			driver.findElement(By.xpath("((//table[contains(@class,'row-table')]/tbody)[2])/tr[1]/td[1]")).click();
-		} else {
-			System.out.println("No rows are displayed!.. Kindly add some leads and try merge again!..");
 		}
 		verifyFocusOnParentWindow();
 		
